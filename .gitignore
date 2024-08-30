@@ -5,10 +5,12 @@
 /public/storage
 /storage/*.key
 /vendor
+/RestClient/
 .env
 .env.backup
 .env.production
 .phpunit.result.cache
+connect.db
 Homestead.json
 Homestead.yaml
 auth.json
@@ -17,5 +19,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/.RestClient
-connect.db
+
