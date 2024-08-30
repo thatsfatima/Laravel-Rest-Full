@@ -4,7 +4,7 @@ Accept: application/json
 Content-Type: application/json
 
 {
-    "libelle": "Riz brizo",
+    "libelle": "Lait",
     "quantity": 15,
     "price": 15000.00
 }
@@ -18,12 +18,8 @@ Content-Type: application/json
 {
   "article": [
     {
-      "id": 7,
-      "quantite": 30
-    },
-     {
-      "id": 4,
-      "quantite": 30
+      "id": 3,
+      "quantite": 100
     }
 
   ]
