@@ -1,0 +1,39 @@
+### CREER UN USER
+POST http://127.0.0.1:8000/wane/v1/users/  HTTP/1.1
+Accept: application/json
+Content-Type: application/json 
+
+{
+    "Nom": "Diaw",
+    "Prenom": "Nogaye",
+    "Login": "nogaye.diaw",
+    "Password":"Passer33@",
+    "Password_confirmation":"Passer33@",
+    "Role":"Client"
+}
+
+### UPDATE USER
+
+PUT http://127.0.0.1:8000/wane/v1/users/1 HTTP/1.1
+Accept: application/json
+Content-Type: application/json 
+
+{
+    "Nom": "Bassirou",
+    "Prenom": "Diaw"
+}
+
+### DELETE USER
+DELETE http://127.0.0.1:8000/wane/v1/users/4 HTTP/1.1
+
+
+
+### CREER UN CLIENT 
+POST http://127.0.0.1:8000/api/v1/clients  HTTP/1.1
+Accept: application/json
+Content-Type: application/json 
+{
+    "surname" : "thatsfatima",
+    "adresse" : "Dakar",
+    "telephone": "771302004"
+}

@@ -1,0 +1,52 @@
+### CREATE ARTICLE
+POST http://127.0.0.1:8000/api/v1/articles HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "libelle": "Riz brizo",
+    "quantity": 15,
+    "price": 15000.00
+}
+
+### UPDATE QTE STOCK
+
+POST  http://127.0.0.1:8000/api/v1/articles/stock HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "article": [
+    {
+      "id": 7,
+      "quantite": 30
+    },
+     {
+      "id": 4,
+      "quantite": 30
+    }
+
+  ]
+}
+
+
+### Show All Article
+
+
+GET http://127.0.0.1:8000/api/v1/articles HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+ 
+
+### Delete article by id
+
+
+DELETE  http://127.0.0.1:8000/api/v1/articles/2 HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+### Restaurer un article
+
+PUT  http://127.0.0.1:8000/api/v1/articles/2/restore HTTP/1.1
+Accept: application/json
+Content-Type: application/json
